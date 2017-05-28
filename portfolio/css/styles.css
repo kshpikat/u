@@ -1,0 +1,74 @@
+html, body {
+    font-size: 16px;
+    line-height: normal;
+}
+
+body {
+    color: #2d3c49;
+    margin: 30px 0;
+}
+
+a:link {
+    color: #2d3c49;
+}
+
+a:hover {
+    color: #7d97ad;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h3, h4 {
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #7d97ad;
+}
+
+/* Only for audio and text-only browsers */
+figcaption {
+    position: absolute;
+    background: rgba(0,0,0,0.75);
+    color: white;
+    padding: 10px 20px;
+    opacity: 0;
+    bottom: 0;
+    left: -30%;
+}
+
+.logo {
+    height: 80px;
+    margin: 20px 10px 20px 0;
+}
+
+.divider {
+    background-color: #7d97ad;
+    color: #7d97ad;
+    height: 4px;
+    border: 0 none;
+}
+
+.text-thin {
+    font-weight: 100;
+}
+
+.grosse-text {
+    font-size: 56px;
+}
+
+.preview-card {
+    text-align: center;
+    overflow: hidden;
+}
+
+.preview-card a {
+    font-size: smaller;
+}
+
