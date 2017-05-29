@@ -6,8 +6,9 @@
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:300,400">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css"/>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -17,90 +18,129 @@
 <div class="container">
     <header>
         <div class="row">
-            <div class="hidden-xs col-sm-4">
+            <div class="col-xs-4">
                 <img src="img/udacity.svg" class="logo img-responsive" alt="Udacity Logo">
             </div>
-            <div class="col-xs-12 col-sm-8 text-right">
+
+            <div class="col-xs-8 text-right">
                 <h1 class="grosse-text text-thin">Mr. Shpikat</h1>
                 <h4>JS Ninjaneer</h4>
             </div>
         </div>
+
         <div class="row">
             <div class="col-sm-12">
                 <hr class="divider">
             </div>
         </div>
     </header>
-    <figure class="row">
-        <div id="highlights-carousel" class="col-sm-12 carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#highlights-carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#highlights-carousel" data-slide-to="1"></li>
-                <li data-target="#highlights-carousel" data-slide-to="2"></li>
-            </ol>
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img src="http://placehold.it/1140x350/e8117f/ffffff?text=Highlight+Project+1"
-                         class="img-responsive" alt="Highlight Project 1">
+    <main>
+        <div class="row">
+            <figure class="col-sm-12">
+                <!--
+                    It's appear that not everyone like <figcaption> element so I will remove it not to confuse bots :)
+                    http://html5doctor.com/the-figure-figcaption-elements/
+                -->
+                <div id="highlights-carousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#highlights-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#highlights-carousel" data-slide-to="1"></li>
+                        <li data-target="#highlights-carousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="http://placehold.it/1140x350/e8117f/ffffff?text=Highlight+Project+1"
+                                 class="img-responsive" alt="Highlight Project 1">
+                        </div>
+                        <div class="item">
+                            <img src="http://placehold.it/1140x350/117fe8/ffffff?text=Highlight+Project+2"
+                                 class="img-responsive" alt="Highlight Project 2">
+                        </div>
+                        <div class="item">
+                            <img src="http://placehold.it/1140x350/7fb811/ffffff?text=Highlight+Project+3"
+                                 class="img-responsive" alt="Highlight Project 3">
+                        </div>
+                    </div>
                 </div>
-                <div class="item">
-                    <img src="http://placehold.it/1140x350/117fe8/ffffff?text=Highlight+Project+2"
-                         class="img-responsive" alt="Highlight Project 2">
-                </div>
-                <div class="item">
-                    <img src="http://placehold.it/1140x350/7fb811/ffffff?text=Highlight+Project+3"
-                         class="img-responsive" alt="Highlight Project 3">
-                </div>
+            </figure>
+        </div>
+
+        <section class="row">
+            <div class="col-sm-12">
+                <h2>Featured Work</h2>
+            </div>
+        </section>
+
+        <section class="row">
+            <article class="col-xs-12 col-sm-6 col-md-4 preview-card">
+                <img class="thumbnail-preview img-responsive"
+                     src="http://placehold.it/720x300/e8117f/ffffff?text=Python"
+                     alt="Project Python">
+                <h3>Python</h3>
+                <p><a target="_blank" href="http://github.com/kshpikat/project4">Python on GitHub</a></p>
+            </article>
+
+            <article class="col-xs-12 col-sm-6 col-md-4 preview-card">
+                <img class="thumbnail-preview img-responsive"
+                     src="http://placehold.it/720x300/117fe8/ffffff?text=Scoreboard" alt="Project Scoreboard">
+                <h3>Scoreboard</h3>
+                <p><a target="_blank" href="http://github.com/kshpikat/project5">Scoreboard on GitHub</a></p>
+            </article>
+
+            <article class="col-xs-12 col-sm-6 col-md-4 preview-card">
+                <img class="thumbnail-preview img-responsive"
+                     src="http://placehold.it/720x300/7fb811/ffffff?text=Electrical" alt="Project Electrical">
+                <h3>Electrical</h3>
+                <p><a target="_blank" href="http://github.com/kshpikat/project6">Link to Electrical</a></p>
+            </article>
+
+            <article class="col-xs-12 col-sm-6 col-md-4 preview-card">
+                <img class="thumbnail-preview img-responsive" src="http://placehold.it/720x300/d8af11/ffffff?text=Tiger"
+                     alt="Project Tiger">
+                <h3>Tiger</h3>
+                <p><a target="_blank" href="http://github.com/kshpikat/project7">Go to Tiger</a></p>
+            </article>
+
+            <article class="col-xs-12 col-sm-6 col-md-4 preview-card">
+                <img class="thumbnail-preview img-responsive"
+                     src="http://placehold.it/720x300/11a87f/ffffff?text=Plastic"
+                     alt="Project Plastic">
+                <h3>Plastic</h3>
+                <p><a target="_blank" href="http://github.com/kshpikat/project8">Link to Plastic</a></p>
+            </article>
+
+            <article class="col-xs-12 col-sm-6 col-md-4 preview-card">
+                <img class="thumbnail-preview img-responsive"
+                     src="http://placehold.it/720x300/7f11e8/ffffff?text=Lobster"
+                     alt="Project Lobster">
+                <h3>Lobster</h3>
+                <p><a target="_blank" href="http://github.com/kshpikat/project9">Link to Lobster</a></p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="row">
+            <div class="col-sm-12">
+                <hr class="divider">
             </div>
         </div>
-        <figcaption>3 most valuable projects: Project 1, Project 2, Project 3</figcaption>
-    </figure>
-    <section class="row">
-        <div class="col-sm-12">
-            <h2>Featured Work</h2>
+
+        <div class="row">
+            <div class="col-xs-12 text-right">
+                <ul class="list-inline">
+                    <li>You can also find me here:</li>
+                    <li><a target="_blank" href="http://facebook.com"><i class="fa fa-2x fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a target="_blank" href="http://github.com"><i class="fa fa-2x fa-github-alt" aria-hidden="true"></i></a></li>
+                    <li><a target="_blank" href="http://twitter.com"><i class="fa fa-2x fa-twitter" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
         </div>
-    </section>
-    <section class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4 preview-card">
-            <img class="thumbnail-preview img-responsive" src="http://placehold.it/720x300/e8117f/ffffff?text=Python"
-                 alt="Project Python">
-            <h3>Python</h3>
-            <p><a href="http://github.com/kshpikat/project4">Python on GitHub</a></p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 preview-card">
-            <img class="thumbnail-preview img-responsive"
-                 src="http://placehold.it/720x300/117fe8/ffffff?text=Scoreboard" alt="Project Scoreboard">
-            <h3>Scoreboard</h3>
-            <p><a href="http://github.com/kshpikat/project5">Scoreboard on GitHub</a></p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 preview-card">
-            <img class="thumbnail-preview img-responsive"
-                 src="http://placehold.it/720x300/7fb811/ffffff?text=Electrical" alt="Project Electrical">
-            <h3>Electrical</h3>
-            <p><a href="http://github.com/kshpikat/project6">Link to Electrical</a></p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 preview-card">
-            <img class="thumbnail-preview img-responsive" src="http://placehold.it/720x300/d8af11/ffffff?text=Tiger"
-                 alt="Project Tiger">
-            <h3>Tiger</h3>
-            <p><a href="http://github.com/kshpikat/project7">Go to Tiger</a></p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 preview-card">
-            <img class="thumbnail-preview img-responsive" src="http://placehold.it/720x300/11a87f/ffffff?text=Plastic"
-                 alt="Project Plastic">
-            <h3>Plastic</h3>
-            <p><a href="http://github.com/kshpikat/project8">Link to Plastic</a></p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 preview-card">
-            <img class="thumbnail-preview img-responsive" src="http://placehold.it/720x300/7f11e8/ffffff?text=Lobster"
-                 alt="Project Lobster">
-            <h3>Lobster</h3>
-            <p><a href="http://github.com/kshpikat/project9">Link to Lobster</a></p>
-        </div>
-    </section>
+    </footer>
 </div>
 </body>
 </html>

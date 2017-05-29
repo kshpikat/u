@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     font-size: 16px;
     line-height: normal;
 }
@@ -17,30 +18,21 @@ a:hover {
 }
 
 h1 {
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
 h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
-h1, h3, h4 {
+h1,
+h3,
+h4 {
     text-transform: uppercase;
 }
 
 h2 {
     color: #7d97ad;
-}
-
-/* Only for audio and text-only browsers */
-figcaption {
-    position: absolute;
-    background: rgba(0,0,0,0.75);
-    color: white;
-    padding: 10px 20px;
-    opacity: 0;
-    bottom: 0;
-    left: -30%;
 }
 
 .logo {
@@ -70,5 +62,19 @@ figcaption {
 
 .preview-card a {
     font-size: smaller;
+}
+
+@media (max-width: 575px) {
+    /* Make header more compact for small screens */
+    body {
+        margin: 10px 0;
+    }
+    .grosse-text {
+        font-size: 36px;
+    }
+    .logo {
+        height: 60px;
+        margin: 20px 10px 10px 0;
+    }
 }
 
